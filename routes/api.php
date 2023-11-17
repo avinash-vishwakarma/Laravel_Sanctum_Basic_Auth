@@ -16,7 +16,7 @@ use App\Http\Controllers\Auth\AuthUserController;
 */
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return Auth::user();
+    return $request->user();
 });
 
 
